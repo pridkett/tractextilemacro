@@ -1,0 +1,50 @@
+= !TextileMacro =
+
+== Description ==
+
+The !TextileMacro package implements the ability to use [http://thresholdstate.com/articles/4312/the-textile-reference-manual Textile]
+within Trac.
+
+== Installation ==
+
+== Configuration ==
+
+Enable the macro in:
+
+/trac/env/Project/conf/trac.ini:
+
+{{{
+[components]
+Textile.* = enabled
+}}}
+
+You may have to restart your Web server.
+
+== Examples ==
+
+{{{
+{{{
+#!Textile
+
+|_. a|_. table|_. heading|
+|a|table|row|
+
+Here's "a link":tstate, and
+"another link":tstate to the same site.
+
+[tstate]http://thresholdstate.com/
+
+}}}
+}}}
+
+== See Also ==
+ * [http://thresholdstate.com/articles/4312/the-textile-reference-manual Textile reference manual]
+ * [http://loopcore.com/python-textile/ Python Textile]
+
+== Source ==
+
+ * Browse the source at: [http://github.com/pridkett/tractextilemacro/tree/master GitHub].
+ * Public clone URL:
+{{{
+git clone git://github.com/pridkett/tractextilemacro.git
+}}}
